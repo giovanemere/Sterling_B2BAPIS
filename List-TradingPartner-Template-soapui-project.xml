@@ -1,5 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="1c8a78ac-afb7-4776-9c3e-c8cbe5a20da8" activeEnvironment="Default" name="List_TradingPartner_Template" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="3890f8ea-7f5d-4625-b8f6-83d775059dba" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.137.2:50075" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://192.168.137.2:50075</con:endpoint></con:endpoints><con:resource name="Tradingpartners" path="/B2BAPIs/svc/tradingpartners/{1}" id="7ddca575-5d30-4b1e-86f8-ad0db60269fd"><con:settings/><con:parameters><con:parameter><con:name>1</con:name><con:value>INT_DEVOPS_SFTP</con:value><con:style>TEMPLATE</con:style><con:default>INT_DEVOPS_SFTP</con:default></con:parameter><con:parameter><con:name>_include</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Tradingpartners 1" id="f41d9804-c955-436e-874d-6eb2e528bd32" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>401 404</con:status><con:params/><con:element xmlns:int="http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP">int:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json; charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:int="http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP">int:Response</con:element></con:representation><con:request name="Request 1" id="d6f0cfe6-ca60-451b-8056-a26674e1bd38" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://192.168.137.2:50075</con:endpoint><con:request/><con:originalUri>http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP</con:originalUri><con:credentials><con:username>fg_sysadmin</con:username><con:password>password</con:password><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:authType>Global HTTP Settings</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters>
-  <con:entry key="1" value="EDISSON_SFTP"/>
-  <con:entry key="_include" value="community"/>
-</con:parameters><con:parameterOrder><con:entry>1</con:entry><con:entry>_include</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+<con:soapui-project id="1c8a78ac-afb7-4776-9c3e-c8cbe5a20da8" activeEnvironment="Default" name="List_TradingPartner_Template" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config">
+	<con:settings/>
+	<con:interface xsi:type="con:RestService" id="3890f8ea-7f5d-4625-b8f6-83d775059dba" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://192.168.137.2:50075" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings/>
+		<con:definitionCache/>
+		<con:endpoints>
+			<con:endpoint>http://192.168.137.2:50075</con:endpoint>
+		</con:endpoints>
+		<con:resource name="Tradingpartners" path="/B2BAPIs/svc/tradingpartners/{1}" id="7ddca575-5d30-4b1e-86f8-ad0db60269fd">
+			<con:settings/>
+			<con:parameters>
+				<con:parameter>
+					<con:name>1</con:name>
+					<con:value>INT_DEVOPS_SFTP</con:value>
+					<con:style>TEMPLATE</con:style>
+					<con:default>INT_DEVOPS_SFTP</con:default>
+				</con:parameter>
+				<con:parameter>
+					<con:name>_include</con:name>
+					<con:value/>
+					<con:style>QUERY</con:style>
+					<con:default/>
+					<con:description xsi:nil="true"/>
+				</con:parameter>
+			</con:parameters>
+			<con:method name="Tradingpartners 1" id="f41d9804-c955-436e-874d-6eb2e528bd32" method="GET">
+				<con:settings/>
+				<con:parameters/>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json; charset=UTF-8</con:mediaType>
+					<con:status>401 404</con:status>
+					<con:params/>
+					<con:element xmlns:int="http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP">int:Fault</con:element>
+				</con:representation>
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json; charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params/>
+					<con:element xmlns:int="http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP">int:Response</con:element>
+				</con:representation>
+				<con:request name="Request 1" id="d6f0cfe6-ca60-451b-8056-a26674e1bd38" mediaType="application/json">
+					<con:settings>
+						<con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://192.168.137.2:50075</con:endpoint>
+					<con:request/>
+					<con:originalUri>http://192.168.137.2/B2BAPIs/svc/tradingpartners/INT_DEVOPS_SFTP</con:originalUri>
+					<con:credentials>
+						<con:username>fg_sysadmin</con:username>
+						<con:password>password</con:password>
+						<con:selectedAuthProfile>Basic</con:selectedAuthProfile>
+						<con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes>
+						<con:authType>Global HTTP Settings</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+					<con:jmsPropertyConfig/>
+					<con:parameters>
+						<con:entry key="1" value="EDISSON_SFTP"/>
+						<con:entry key="_include" value="community"/>
+					</con:parameters>
+					<con:parameterOrder>
+						<con:entry>1</con:entry>
+						<con:entry>_include</con:entry>
+					</con:parameterOrder>
+				</con:request>
+			</con:method>
+		</con:resource>
+	</con:interface>
+	<con:properties/>
+	<con:wssContainer/>
+	<con:oAuth2ProfileContainer/>
+	<con:oAuth1ProfileContainer/>
+	<con:sensitiveInformation/>
+</con:soapui-project>

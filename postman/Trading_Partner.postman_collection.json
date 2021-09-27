@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "06fdb114-0ca0-4910-b6ab-4d399b1c36f0",
+		"name": "Trading_Partner",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List Trading Partner",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"connection": true,
+					"accept-encoding": true,
+					"accept": true,
+					"user-agent": true,
+					"host": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://192.168.137.2:50075/B2BAPIs/svc/tradingpartners/?id=EDISSON_SFTP&_include=community",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"137",
+						"2"
+					],
+					"port": "50075",
+					"path": [
+						"B2BAPIs",
+						"svc",
+						"tradingpartners",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "EDISSON_SFTP"
+						},
+						{
+							"key": "_include",
+							"value": "community"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Trading Partner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "Create Trading Partner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "Banco123*",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "edisson",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
